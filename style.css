@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    width: 800px;
+    height: 500px;
+    background-color: #fff;
+    border: 3px solid #333;
+    position: relative;
+    overflow: hidden;
+}
+
+#character {
+    position: absolute;
+    width: 60px;
+    height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: left 0.1s, top 0.1s;
+}
+
+.head {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #ffcc99;
+    border-radius: 50%;
+    top: 0;
+    left: 10px;
+    border: 2px solid #333;
+}
+
+.body {
+    position: absolute;
+    width: 30px;
+    height: 40px;
+    background-color: #ff5555;
+    top: 40px;
+    left: 15px;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.arm {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #ffcc99;
+    top: 45px;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.left-arm {
+    left: 5px;
+}
+
+.right-arm {
+    right: 5px;
+}
+
+.leg {
+    position: absolute;
+    width: 12px;
+    height: 35px;
+    background-color: #3366ff;
+    top: 80px;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+
+.left-leg {
+    left: 14px;
+}
+
+.right-leg {
+    right: 14px;
+}
+
+.instructions {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+} 
